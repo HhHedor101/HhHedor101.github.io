@@ -1,0 +1,283 @@
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 3px;
+    width: 95%;
+    text-align: center;
+    justify-self: center;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+}
+
+p {
+    text-align: left;
+    line-height: 1.8;
+}
+
+h1,
+footer {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin: 0px;
+    width: 100vw;
+    background-color: black;
+    color: white;
+}
+
+/* Lighten the font a bit for h3 */
+h3 {
+    font-weight: 500;
+}
+
+.sectiontitle {
+    margin-top: 80px;
+    margin-bottom: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+    background-color: #664a36;
+    color: white;
+}
+
+/* Formatting of headers for <aside> */
+.asidetitle {
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+/* Formatting for figure captions */
+figcaption {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: gray;
+}
+
+/* Figure captions in <aside>s are slightly different from normal  */
+.asidefigcap {
+    color: lightgray;
+}
+
+.multiplethings {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+button {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 10px;
+    width: 75%;
+    font-weight: bold;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.menubutton {
+    background: #c96666;
+    width: 50px;
+    height: 50px;
+    z-index: 100;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.menubutton:hover {
+    background: #803737;
+}
+
+.floating-menu {
+
+    background: #c96666;
+    max-width: 0;
+    overflow: hidden;
+    z-index: 100;
+    position: fixed;
+    top: 55px;
+    left: 0;
+}
+
+.floating-menu.open {
+    border: #803737 5px solid;
+    max-width: 130px;
+}
+
+.floating-menu button:hover {
+    background: lightgray;
+}
+
+/* Sprite sheet stuff */
+.sprite {
+  width: 58px;
+  height: 58px;
+  background-image: url('Images/spritesheet.png');
+  background-repeat: no-repeat;
+  display: inline-block;
+  cursor: grab;
+}
+
+.icon1 { background-position: 0 0; }           /* first icon */
+.icon2 { background-position: -58px 0; }        /* second icon */
+.icon3 { background-position: -116px 0; }        /* third icon */
+.icon4 { background-position: 0px -58px; }        /* fourth icon */
+.icon5 { background-position: -58px -58px;}        /* fifth icon */ 
+
+#icons {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+#dropzone {
+  width: 200px;
+  height: 150px;
+  border: 2px dashed #999;
+  background-color: #f0f0f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+
+.hiding {
+    display: none;
+}
+
+.scrollingText * {
+    animation: text-appear both;
+    animation-timeline: view();
+    animation-range: entry 20% cover 40vh;
+}
+
+@keyframes text-appear {
+    from {
+        opacity: 0;
+        transform: translateY(50%);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Phone media query */
+@media (min-width: 1px) and (max-width: 800px) {
+
+    /* Some formatting for our images */
+    img {
+        margin-top: 10px;
+        width: 100%;
+        height: auto;
+        border: rgb(222, 222, 222) 5px solid;
+    }
+
+    aside {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        padding-bottom: 10px;
+        width: 100%;
+        border: #56a173 5px solid;
+        background-color: #366656;
+        color: white;
+    }
+
+    /* Formatting for when a part of a section has a header, but does not have a dedicated div */
+    .segmenttitle {
+        margin-top: 30px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        width: 100%;
+        background-color: #04568d;
+        color: white;
+        justify-self: left;
+    }
+
+    .togetherimages {
+        width: 100%;
+        height: auto;
+    }
+
+    /* QR code stuff */
+    #qrCodeImg{display:none;} /*hide QR code */
+    
+}
+
+/* Media query for tablets */
+@media (min-width: 801px) and (max-width: 1279px) {
+
+    /* Some formatting for our images */
+    img {
+        margin-top: 10px;
+        width: 90%;
+        height: auto;
+        border: rgb(222, 222, 222) 14px solid;
+    }
+
+    aside {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        padding-bottom: 10px;
+        width: 70%;
+        border: #56a173 5px solid;
+        background-color: #366656;
+        color: white;
+    }
+
+    .segmenttitle {
+        margin-top: 30px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        width: 60%;
+        background-color: #04568d;
+        color: white;
+        justify-self: left;
+    }
+
+    .togetherimages {
+        width: 49%;
+        height: auto;
+    }
+}
+
+/* Media query for desktops */
+@media (min-width: 1280px) {
+
+    /* Some formatting for our images */
+    img {
+        margin-top: 10px;
+        width: 50%;
+        height: auto;
+        border: rgb(222, 222, 222) 14px solid;
+    }
+
+    aside {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        padding-bottom: 10px;
+        width: 70%;
+        border: #56a173 5px solid;
+        background-color: #366656;
+        color: white;
+    }
+
+    .segmenttitle {
+        margin-top: 30px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        width: 40%;
+        background-color: #04568d;
+        color: white;
+        justify-self: left;
+    }
+
+    .togetherimages {
+        width: 49%;
+        height: auto;
+    }
+}

@@ -1,0 +1,15 @@
+{
+    "name": "WebDev A2 PWA",
+    "short_name": "243099T_A02",
+    "start_url": "index.html",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#00FF00",
+    "icons": [
+        {
+            "src": "Images/pre1914+ww1+interwar/liptak.png",
+            "sizes": "64x64",
+            "type": "image/png"
+        }
+    ]
+}

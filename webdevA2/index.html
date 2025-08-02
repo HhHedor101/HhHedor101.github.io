@@ -1,0 +1,1212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- NOTE ABOUT WEIRD THING: -->
+<!-- For some reason, the validator wanted me to do <head></body> instead of <head></head> and <body></body> -->
+<!-- IDK if this is wrong but since the validator marked me correct for <head></body> im just gonna leave it like that -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1,user-scalable=no">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <!-- get icons from https://www.favicon.cc -->
+    <link rel="manifest" href="manifest.json" />
+
+    <title>History of Military Tanks by Ethan Lim</title>
+    <link href="style.css" rel="stylesheet">
+
+    <!-- Preload in some audio -->
+    <audio id="putwater" src="Audio/waterrr.mp3"></audio>
+    <audio id="putfire" src="Audio/fireee.mp3"></audio>
+    <audio id="putair" src="Audio/airrr.mp3"></audio>
+    <audio id="putground" src="Audio/grounddd.mp3"></audio>
+
+    <header id="top">
+        <h1>History of Military Tanks (and other related Vehicles!)</h1>
+    </header>
+
+    <button id="btnFS">FullScreen</button>
+    <button id="btnWS">Exit Full Screen</button>
+
+    <button id="navbutton" class="menubutton">\__/</button>
+    <nav id="collapsingnav" class="floating-menu">
+        Contents
+        <div id="buttons">
+            <button onclick="showSection('section1'); location.href='#top'">Early Concepts</button>
+            <button onclick="showSection('section2'); location.href='#top'">World War I</button>
+            <button onclick="showSection('section3'); location.href='#top'">The Interwar Period</button>
+            <button onclick="showSection('section4'); location.href='#top'">World War II</button>
+            <button onclick="showSection('section5'); location.href='#top'">The Cold War and Today</button>
+            <button onclick="showSection('section6'); location.href='#top'">Classing Tanks</button>
+            <button onclick="showSection('section7'); location.href='#top'">More Tank Facts</button>
+        </div>
+    </nav>
+
+    <main class="scrollingText">
+        <p style="margin-top: 40px;">
+            War is something that humanity has waged for all of its existence. It is during war that people
+            would want
+            to
+            find the most efficient
+            way of prematurely ending their enemies' lives, resulting in some interesting innovations. One of
+            these
+            innovations is the concept of
+            <b>"Armoured Fighting Vehicles"</b>, which came about in the middle of the period of <i>industrial
+                warfare</i>.
+        </p>
+        <aside>
+            <header class="asidetitle">
+                <h3>"Industrial warfare"</h3>
+            </header>
+            <p>
+                The term <i>industrial warfare</i> refers to a period of time that began around the same the
+                time the
+                Industrial Revolution began,
+                and ends around the beginning of the Atomic Age (marked by the detonation of the first prototype
+                nuclear
+                bomb during the Trinity test).
+            </p>
+            <p>
+                It got its name from the fact that countries began having the ability to equip their armed
+                forces, by
+                using
+                the extreme efficiency of factories
+                to rapidly produce munitions. Tanks are one example of this, as they too were, and still are,
+                produced
+                in
+                very large quantities.
+            </p>
+        </aside>
+        <p>
+            As technology progresses and militaries find new ways of waging war, armoured fighting vehicles have
+            also
+            evolved greatly with their continued
+            use in conflicts today - let's look into how this evolution has taken place!
+        </p>
+        <br>
+        <p style="text-align: center;">
+            <i>Use the Nav bar in the top left to see the timeline!</i>
+        </p>
+
+        <section id="section1" class="section" style="display: none">
+            <header class="sectiontitle">
+                <h2>Early Conceptions</h2>
+            </header>
+            <p>
+                The idea to have some sort of fortified moving vehicle be used in war is a concept that has
+                actually
+                existed
+                for hundred of years -
+                All the way back in the 15th Century, Leonardo Da Vinci (yes, the painter) was credited with
+                designing
+                something that is very identical
+                in function to a tank.
+            </p>
+            <figure>
+                <img src="Images/pre1914+ww1+interwar/da_vinci.jpg" alt="Da Vinci's idea for a tank"
+                    title="Da Vinci's idea of a vehicle that functions much like a tank does">
+                <figcaption>Da Vinci's idea of a vehicle that functions much like a tank does.</figcaption>
+            </figure>
+
+            <p>
+                People only really started taking the idea seriously when the Industrial Revolution began, which
+                was
+                when
+                internal combustion engines
+                became a big thing - the notion of a big metal vehicle that was armed was suddenly plausible.
+                Ideas were
+                especially abundant in the lead-up
+                to the First World War, with design proposals floating all over Europe.
+            </p>
+            <p>
+                The first physical functioning design was the <i>Lipták harckocsi</i>, or simply the Liptak tank
+                - a
+                Hungarian tracked vehicle by a guy
+                called Pál Lipták. His design unfortunately was rejected by the Hungarian military as they
+                deemed it too
+                unprotected to be used practically.
+            </p>
+            <figure>
+                <img src="Images/pre1914+ww1+interwar/liptak.png" alt="The markup for Liptak's tank"
+                    title="The markup for Liptak's tank">
+                <figcaption>The Lipták tank.</figcaption>
+            </figure>
+        </section>
+
+        <section id="section2" class="section" style="display: none">
+            <header class="sectiontitle">
+                <h2>World War I (1914 - 1918)</h2>
+            </header>
+            <p>
+                Even with its centuries-long origins, tanks really only began to manifest during the Great War.
+                The
+                First
+                World War was a conflict that was especially grim and hard to swallow.
+                You might have seen some photographs or other depictions of the battlefields - gruesome fields
+                of dark
+                brown
+                mud with puddles that were sometimes more blood than water, the
+                barbed wire and abandoned bodies of deceased soldiers and horses who could not be evacuated
+                strewn
+                around
+                everywhere, and the general ruins of former housing as well.
+            </p>
+            <figure>
+                <img src="Images/pre1914+ww1+interwar/ww1_intro.jpg"
+                    alt="American soldiers during the 1918 Meuse-Argonne offensive"
+                    title="American soldiers during the 1918 Meuse-Argonne offensive">
+                <figcaption>American soldiers during the 1918 Meuse-Argonne offensive.</figcaption>
+            </figure>
+
+            <p>
+                The nature of trench warfare during WWI meant that soldiers on both sides were forced to charge
+                headlong
+                into almost certain death by gunfire. This was the unfortunate fate
+                of many men during the war. Because of this, the idea of trying to develop a vehicle that could
+                withstand
+                conventional gunfire whilst also providing offensive capabilities
+                once again became very popular. Many countries involved in the war (France, Great Britain, the
+                German
+                Empire, the Russian Empire etc.) tried pioneering their own designs
+                of the first warships-on-land - the <i>'Landship'</i>.
+            </p>
+            <aside>
+                <header class="asidetitle">
+                    <h3>Did You Know?</h3>
+                </header>
+                <p>
+                    The term 'tank' came from a code word! The idea of landships was kept as a secret on the
+                    British
+                    side,
+                    so developers decided to call their prototype 'water carriers' - disguising
+                    the armoured vehicles as simply vehicles to transport water, so that their developments
+                    remained a
+                    secret from the enemy. The code word of 'water tank' was used throughout
+                    development, and eventually it stuck as a way to continue deceiving the opposing Germans as
+                    to their
+                    true purpose.
+                </p>
+            </aside>
+            <p>
+                After a long period of development, the British finally introduced their first working tanks to
+                the
+                battlefield - In September 1916, a few new 'Mark I' tanks saw their first action
+                at the Battle of Flers-Courcelette which was part of the Somme Offensive (one of the biggest and
+                deadliest
+                battles in WWI). Although many broke down in the middle of their attack, beginning
+                able to withstand heavy gunfire and cut through barbed wire meant that a whole third of the
+                attacking
+                force
+                broke through no man's land. Thus began the era of armoured warfare - its birthplace
+                in trenches of Northern France.
+            </p>
+
+            <figure>
+                <img src="Images/pre1914+ww1+interwar/mark_i.jpg" alt="A Mark I tank" title="A Mark I tank">
+                <figcaption>The Mark I - the first tank ever fielded in battle.</figcaption>
+            </figure>
+            <p>
+                The Somme had only seen a small number of Mark Is participate - the first time tanks were used
+                en masse
+                was
+                at the Battle of Cambrai in 1917, which saw more than 400 Mark IVs (an evolution of the
+                earlier Mark I) go over the top. However, mechanical difficulties and German resistance caused
+                half of
+                all
+                these tanks to be knocked out of action in one day.
+            </p>
+            <br>
+            <p>
+                Although the Mark Is did not perform very well in the Somme Offensive, public reactions exploded
+                -
+                British
+                media compared the fearsome weapons to dragons, whales and mammoths. Many articles and
+                documentaries
+                were made on tanks, which saw widespread viewership. Eventually other countries developed their
+                own tank
+                designs - French and German designs would see combat in the latter years of the war, with the
+                German
+                A7V eventually butting heads with the Mark IVs at the Second Battle of Villers-Bretonneux, the
+                first
+                ever
+                tank-on-tank battle. At some points, successful German attacks even allowed them to capture some
+                British tanks and turn them on their former masters.
+            </p>
+            <figure>
+                <img src="Images/pre1914+ww1+interwar/a7v.jpg" alt="German A7V" title="German A7V">
+                <figcaption>The German A7V, the country's first domestically-designed tank.</figcaption>
+            </figure>
+            <aside>
+                <header class="asidetitle">
+                    <h3>Other Countries' Tank Designs</h3>
+                </header>
+                <p>
+                    Being a totally new concept meant countries got more creative with their designs. As we have
+                    seen,
+                    the
+                    Mark Is had the layout of having the driver (the driving compartment) be placed at the
+                    front, with
+                    guns
+                    (the fighting compartment) placed at the sides of tanks, and finally the engine compartment
+                    at the
+                    back.
+                    Other countries tried to vary this design - such as putting the fighting compartment at the
+                    front
+                    of the tank instead, as seen with the German A7V or the French <i>'Saint-Chamond'</i>. Some
+                    came up
+                    with
+                    very... <i>interesting</i> designs, like the Russian Tsar Tank.
+                </p>
+                <figure>
+                    <img src="Images/pre1914+ww1+interwar/tsar_tank.jpg" alt="Russian Tsar tank"
+                        title="Russian Tsar tank">
+                    <figcaption class="asidefigcap">The experimental Tsar tank was clearly quite unconventional.
+                    </figcaption>
+                </figure>
+                <p>
+                    However, it could be said that the most impactful tank design was the French Renault FT
+                    light tank,
+                    which was
+                    the first tank to follow the driving-fighting-engine compartment layout with the turret on
+                    top
+                    instead -
+                    This is the layout tanks follow to this day.
+                </p>
+                <figure>
+                    <img src="Images/pre1914+ww1+interwar/renault_ft.jpg" alt="French FT" title="French FT">
+                    <figcaption class="asidefigcap">The FT tank would form the basis for almost all tank
+                        designs.
+                    </figcaption>
+                </figure>
+            </aside>
+        </section>
+
+        <section id="section3" class="section" style="display: none">
+            <header class="sectiontitle">
+                <h2>The Interwar Period (1919 - 1938)</h2>
+            </header>
+            <p>
+                In the years between both world wars, tank development still took place despite the time of
+                relative
+                peace.
+                Countries' designs became more distiguishable from each other as they developed different
+                doctrines for
+                armoured
+                warfare.
+            </p>
+            <br>
+            <p>
+                France and Great Britain continued on with their research, and both came up with different ideas
+                of how
+                they
+                were going to
+                best make use of their newly-pioneered inventions.
+            </p>
+            <br>
+            <p>
+                <b>Great Britain</b> started by improving on their Great War designs, making their tanks move
+                faster and
+                giving
+                them greater traversal
+                with tanks like the Vickers Medium Mark II. British experiments eventually came up with three
+                main types
+                of
+                main tanks - 'Light',
+                'Cruiser' and 'Infantry', each fulfilling their own roles such as providing fast-moving
+                destructive
+                capability or acting as shields
+                for regular infantry.
+            </p>
+            <div class="multiplethings" style="justify-content: center;">
+                <figure class="togetherimages">
+                    <img src="Images/pre1914+ww1+interwar/britishexample_cruiser.jpg" alt="British Crusader I"
+                        title="British Crusader I">
+                    <figcaption>A British Crusader I, an early example of a cruiser tank.</figcaption>
+                </figure>
+                <figure class="togetherimages">
+                    <img src="Images/pre1914+ww1+interwar/britishexample_infantry.jpg" alt="British Matilda I"
+                        title="British Matilda I">
+                    <figcaption>A British Matilda I, an early example of an infantry tank.</figcaption>
+                </figure>
+            </div>
+            <p>
+                <b>France</b> had a somewhat similar system, although calling their two tank types 'Infantry'
+                and
+                'Cavalry'
+                tanks
+                instead. They developed many
+                unique designs and was actually the second largest producer of tanks - behind the Soviet Union.
+                By the
+                1930s, France had constructed possibly
+                the best fleet of tanks at the time to arm themselves, from the two-manned, small-sized Renault
+                R 35 to
+                behemoths like the Char B1.
+            </p>
+            <figure>
+                <img src="Images/pre1914+ww1+interwar/somua_s35.jpg" alt="French Somua S35" title="French Somua S35">
+                <figcaption>The SOMUA S35, a cavalry tank that was superior for its time, but expensive.
+                </figcaption>
+            </figure>
+            <p>
+                However, French tanks often could not perform very well due to their crew size. France suffered
+                a great
+                loss
+                in population in the First World War, which
+                left their military short-staffed. As a result, tanks often had very small crew sizes (Light
+                tanks often
+                carried only two crewmen) which forced
+                tankmen to carry a very heavy set of tasks, which no doubt tired them out and reduced their
+                effectiveness.
+            </p>
+            <br>
+            <p>
+                <b>The Soviet Union</b> also followed similar 'Light'/'Heavy' conventions - small and fast tanks
+                with
+                larger
+                and
+                more sturdy ones. Soviet heavy tanks
+                during this period notably had multiple turrets on a single chassis, like the T28 or the T35.
+                This was a
+                design philosophy more reminiscent of
+                WWI, since tanks at the time were mainly used to spearhead frontal assaults and involved
+                attacking
+                multiple
+                enemy positions at once.
+            </p>
+            <figure>
+                <img src="Images/pre1914+ww1+interwar/t-35.jpg" alt="Soviet T-35" title="Soviet T-35">
+                <figcaption>The Soviet T-35 was an example of a big multi-turreted tank that spawned from WWI
+                    mentalities.
+                </figcaption>
+            </figure>
+            <p>
+                At this time, the Treaty of Versailles limited the military of the <b>German Weimar
+                    Republic</b>,
+                including
+                research into armoured warfare. It was only
+                when Adolf Hitler came into power as Fuhrer in 1934 that tank development continued, which gave
+                birth to
+                the
+                tanks that would later on be used in the
+                invasions of Poland and France in the early stages of World War II.
+            </p>
+            <figure>
+                <img src="Images/pre1914+ww1+interwar/neubaufahrzeug.jpg" alt="German Neubaufahrzeug"
+                    title="German Neubaufahrzeug">
+                <figcaption>The German Neubaufahrzeug would not see much combat, but it would be used for
+                    propaganda.
+                </figcaption>
+            </figure>
+        </section>
+
+        <section id="section4" class="section" style="display: none">
+            <header class="sectiontitle">
+                <h2>World War II (1939 - 1945)</h2>
+            </header>
+            <p>
+                When talking about tanks, it is almost impossible not to talk about tanks during the Second
+                World War.
+                This
+                was the war that armoured warfare had truly began
+                solidifying itself as an important weapon in warfare in general. Tanks became omnipresent, with
+                almost
+                every
+                military that participated fielding their own
+                vehicles in some way. They also started using them in conjunction with other elements. Many
+                tanks were
+                developed and fielded over the course of the 6 years - Let's cover the more significant ones.
+            </p>
+
+            <header class="segmenttitle">
+                <h3>The Early German Panzers</h3>
+            </header>
+            <p>
+                From the very beginning of the war in September 1939, the 'panzers' (German term for tanks) of
+                the
+                Wehrmacht
+                had been crossing the German border into Poland. These included
+                the Panzer Is, Panzer IIs, Panzer IIIs and Panzer IVs. The Panzer IIIs and IVs are of particular
+                importance,
+                as they were intended as Nazi Germany's two main tanks, each fulfilling
+                anti-tank and infantry support roles respectively. However, these two types were available in
+                scarce
+                numbers, and Germany's tank fleet comprised of mostly the earlier and weaker
+                Panzer Is and Panzer IIs instead.
+            </p>
+            <div class="multiplethings" style="justify-content: center;">
+                <figure class="togetherimages">
+                    <img src="Images/ww2/panzer_i.png" alt="German Panzer I" title="German Panzer I">
+                    <figcaption>The German Panzer I was armed only with machine guns.</figcaption>
+                </figure>
+                <figure class="togetherimages">
+                    <img src="Images/ww2/panzer_ii.jpg" alt="German Panzer II" title="German Panzer II">
+                    <figcaption>The Panzer II had a bigger 20mm autocannon, but that did not perform well
+                        against tanks.
+                    </figcaption>
+                </figure>
+            </div>
+            <figure>
+                <img src="Images/ww2/panzer_iii.jpg" alt="German Panzer III" title="German Panzer III">
+                <figcaption>The Panzer III was much more capable and was put in an anti-tank role. A Panzer IV
+                    can be
+                    seen in the background.</figcaption>
+            </figure>
+            <p>
+                The Panzer IVs are particularly noteworthy. They are probably one of Germany's all-around best
+                designs,
+                having been used from the start in 1939 all the way till the end of the war in
+                Europe in May 1945. The design went through many phases in its evolution, with each phase being
+                marked
+                by a
+                letter of the alphabet - from the earlier <i>Ausführung A</i> all the way till
+                the <i>Ausführung J</i>. They were also used in every single theatre Germany was involved in -
+                in France
+                and
+                the rest of Western Europe, the Soviet Union and North Africa.
+            </p>
+
+            <!-- SLIDESHOW 1 -->
+            <div class="multiplethings">
+                <button id="firstleft" style="width: 50px; position: relative; left: 43%;">&#8592;</button>
+                <button id="firstright" style="width: 50px; position: relative; left: 43%;">&#8594;</button>
+            </div>
+            <figure>
+                <img id="firstimgarr" src="Images/ww2/ausf_a.jpg">
+                <figcaption id="firstdyncaption">The Ausführung A, which was the first Panzer IV model.</figcaption>
+            </figure>
+
+            <header class="segmenttitle">
+                <h3>Queen of the Desert</h3>
+            </header>
+            <p>
+                Tanks were also a major weapon used in the North Africa campaign, which ran from 1940 - 1943.
+                The
+                campaign
+                initially saw British forces from Egypt butting heads with Italian forces from the Libyan
+                colony. Of particular note is a British infantry tank called the Matilda II, with its most
+                impressive
+                aspect
+                being its armour - in the earlier years, its thick armour plating meant it was almost (but not
+                completely) invulnerable to Axis firepower! Matilda tanks of the British 7th Armoured Division
+                laid
+                waste to
+                Italian forces in Egypt. Matilda tanks also was part of the force that saw Italian forces
+                pushed all the way back to Libya - it even gained a nickname: 'Queen of the Desert'. These
+                so-called
+                royalty
+                continued to be a pain all the way till late 1941, even after the Germans arrived to strengthen
+                the opposition.
+            </p>
+            <figure>
+                <img src="Images/ww2/matilda_ii.jpg" alt="British Matilda II" title="British Matilda II">
+                <figcaption>The Queen of the Desert! At least, for a little while.</figcaption>
+            </figure>
+            <p>
+                However, the Matilda's reign would not last long - as speed, essential in the rapid manoeuvre
+                warfare
+                practised in the deserts, was something she painfully lacked. Eventually, the German Afrika
+                Korps
+                brought
+                over guns like their 8.8cm flak anti-aircraft gun, or the 5cm Pak 36 and 7.5cm Pak 40, which
+                could knock
+                out
+                Matildas. Her effectiveness fizzled out, and she eventually reached the end of her service life
+                around
+                late
+                1942 when designs like the 'Valentine' or 'Churchill' tanks took her place instead.
+            </p>
+
+            <header class="segmenttitle">
+                <h3>The T-34</h3>
+            </header>
+            <p>
+                The Soviet T-34 might be one of the most legendary tanks of all-time, it was superior in many
+                aspects -
+                it's
+                76.2mm gun was superior to many other tank guns at the time and its sloped armour provided solid
+                protection.
+                It was produced in great numbers, being the most produced tank of WWII and influencing tank
+                design for
+                many
+                years. It has one of the longest service lives for a tank, with some tanks still being in
+                service with
+                countries' militaries today.
+            </p>
+            <figure>
+                <img src="Images/ww2/t-34_early.jpg" alt="A museum T-34" title="A museum T-34">
+                <figcaption>Many T-34s are preserved in museums.</figcaption>
+            </figure>
+            <p>
+                On top of it being one best all-around tanks for its time, it was also produced in extremely
+                large
+                numbers -
+                with more than 80,000 T-34 tanks of all variants being built. Because of the urgency of having
+                to defend
+                themselves, Soviet factories would often skip producing certain parts deemed unnecessary, like
+                headlights.
+                There were times when factories were so close to the frontlines that crews could literally drive
+                fresh
+                T-34s
+                from the factory to the battlefields without transportation, often without their regular
+                paintjobs.
+                During
+                the German invasion of the Soviet Union, when encountering Soviet T-34 squads, German armoured
+                units
+                would
+                often find themselves outnumbered by T-34s.
+            </p>
+            <br>
+            <p>
+                It's advantages in firepower, protection and numbers made it a force to be truly reckoned with
+                at the
+                Eastern Front.
+            </p>
+
+            <header class="segmenttitle">
+                <h3>The M4 Sherman</h3>
+            </header>
+            <p>
+                The Allies' other Jack-of-all-Trades tank is the M4 Sherman, named after American Civil War
+                general
+                William
+                Tecumseh Sherman - think of it as the American alternative to the T-34. In terms of individual
+                performance,
+                The Sherman was actually weaker than the T-34, sporting a smaller gun and lesser armour.
+                However, like
+                the
+                T-34, it was produced in very big quantities, with almost 50,000 being produced. It went through
+                many
+                iterations, and saw combat in almost every theatre in WWII - France, the Soviet Union, North
+                Africa and
+                even
+                against the Imperial Japanese.
+            </p>
+            <figure>
+                <img src="Images/ww2/m4_later.jpg" alt="An M4 with infantry" title="An M4 with infantry">
+                <figcaption>Shermans often worked closely together with infantry.</figcaption>
+            </figure>
+            <p>
+                The Sherman might not have been very great on its own, but it had many unique strengths -
+                particularly
+                in
+                logistics. The tank was very well liked among crews and frontline troops. The tank was large and
+                spacious
+                unlike the T-34 which was extremely cramped, and it had many entrance/exit hatches. All this
+                meant crews
+                were able to operate it quite comfortably, and could also make a quick escape if the tank was
+                knocked
+                out or
+                on fire. When an Allied Sherman DID get knocked out, crews could return to their lines and
+                almost
+                immediately find a replacement waiting for them. The same could be actually be said for almost
+                all
+                pieces of
+                Western Allied equipment - such was the almost phenomenal logistics system the Allies had in
+                place.
+            </p>
+            <aside>
+                <header class="asidetitle">
+                    <h3>Sherman's Many Talents</h3>
+                </header>
+                <p>
+                    Alongside being a tank, the Sherman was used for many other purposes other than combat. Try
+                    dragging
+                    and
+                    dropping each element to the Sherman tank and see how they were used!
+                </p>
+                <div id="icons">
+                    <div class="sprite icon1 draggable" draggable="true" id="icon1"></div>
+                    <div class="sprite icon2 draggable" draggable="true" id="icon2"></div>
+                    <div class="sprite icon3 draggable" draggable="true" id="icon3"></div>
+                    <div class="sprite icon4 draggable" draggable="true" id="icon4"></div>
+                </div>
+
+                <div id="dropzone" style="color: black; font-size: xx-large;">
+                    <div class="sprite icon5" id="icon5"></div> +
+                </div>
+
+                <button id="resetBtn">Reset</button>
+
+                <div id="shermandd">
+                    <img src="Images/ww2/sherman_dd.jpg" alt="Sherman DD" title="Sherman DD">
+                    <p>This is the <b>Sherman DD (Duplex-Drive)</b>! It is an amphibious Sherman that was used to cross
+                        shorter bodies of water. They were used during the D-Day Normandy landings in June 1944,
+                        with Sherman DDs landing at every beach involved.</p>
+                </div>
+
+                <div id="shermancalliope">
+                    <img src="Images/ww2/sherman_calliope.jpg" alt="Sherman T34 Calliope" title="Sherman T34 Calliope">
+                    <p>This is the <b>Sherman T34 Calliope</b>! It is a type of Sherman that had lethal rockets attached
+                        to
+                        a launcher on top of the tank and was used as the tank's personal artillery system.</p>
+                </div>
+
+                <div id="shermancrab">
+                    <img src="Images/ww2/sherman_crab.jpg" alt="Sherman Crab" title="Sherman Crab">
+                    <p>This is the <b>Sherman Crab</b>! It is a type of Sherman equipped with a 'mine flail' - a device
+                        that deliberately detonated mines ahead of the tank by violently pounding the ground in
+                        front of the tank.</p>
+                </div>
+
+                <div id="shermanflame">
+                    <img src="Images/ww2/sherman_flame.jpg" alt="M4A3R" title="M4A3R">
+                    <p>This is the <b>M4A3R Sherman</b>! It is a type of Sherman that was equipped with a flamethrower,
+                        and
+                        was particularly used against the Japanese to flush out heavily entrenched positions.</p>
+                </div>
+            </aside>
+
+            <header class="segmenttitle">
+                <h3>Late-war German Panzers</h3>
+            </header>
+            <p>
+                German tanks later on in the war are particularly notorious - most designs past 1943 had many
+                influences
+                (but are not direct products) from Hitler's idealistic aspirations for a 'Wunderwaffe' - he
+                demanded his
+                armoured force have a fleet of tanks that exaggerated firepower and protection. The most famous
+                tank
+                from
+                this period of time is the Panzer V - otherwise known as the Tiger I. It had a reputation for
+                having a
+                gun
+                that could knock out most Allied tanks, armour that protected against most Allied firepower and
+                could
+                still
+                keep up with its contemporaries in mobility and speed. Other tanks, such as the Panzer VI -
+                Panther and
+                the
+                Panzer VII - Tiger II or 'King Tiger' that had similarly superior design philosophies in
+                firepower and
+                protection. Although their reputation is somewhat overblown, which, to be fair, is a notion that
+                has
+                been
+                debunked in recent years, the Allies were still right to fear the formidable tanks.
+            </p>
+            <div class="multiplethings" style="width: 100vw; justify-content: center;">
+                <figure class="togetherimages">
+                    <img src="Images/ww2/panther.jpg" alt="German Panther tank" title="German Panther tank">
+                    <figcaption>The German Panzer VI Panther.</figcaption>
+                </figure>
+                <figure class="togetherimages">
+                    <img src="Images/ww2/tiger_i.jpg" alt="German Tiger I" title="German Tiger I">
+                    <figcaption>The German Panzer V Tiger I</figcaption>
+                </figure>
+            </div>
+            <figure>
+                <img src="Images/ww2/tiger_ii.jpg" alt="German Tiger II" title="German Tiger II">
+                <figcaption>The German Panzer VII Tiger II - otherwise known as the King Tiger.</figcaption>
+            </figure>
+            <p>
+                However, almost all of them greatly suffered from similar issues stemming from Nazi Germany's
+                situation
+                late
+                in the war. Germany's logistics system, exhausted from years of conflict, had largely depleted
+                its
+                resources. For example, Germany had fewer oil fields and sources of steel and synthetic fuel to
+                draw
+                materiel from. Additionally, the urgency of Germany's situation also meant things like crew
+                training had
+                to
+                be extremely rushed. As such, German tanks could not perform very effectively and often ran out
+                of fuel
+                or
+                ammunition - in a lot of cases, crews had to completely abandon their vehicles when their tank
+                eventually
+                broke down - a polar opposite of the Allied side's situation. Their extremely big size and
+                weight also
+                limited their reach, especially in remote areas like the Belgian or French countryside, or when
+                bridge
+                crossing was necessary. Therefore, while fearsome in theory, tanks like the Tigers or Panthers
+                often had
+                very poor practical effectiveness.
+            </p>
+            <aside>
+                <header class="asidetitle">
+                    <h3>Other Axis Tanks</h3>
+                </header>
+                <p>
+                    We have talked a lot about tanks from Germany, but the Axis powers also includes Imperial
+                    Japan and
+                    Fascist Italy - what about their tanks? When it comes to these two other powers, their tanks
+                    were,
+                    to be
+                    blunt, not good. Both nations did own their own fleet of armoured vehicles, but they had
+                    almost no
+                    chance of matching up against the main Allied powers.
+                </p>
+                <br>
+                <p>
+                    Starting with the Japanese, their tanks were not good because they did not put much effort
+                    into
+                    armoured
+                    warfare research. The most produced Japanese tank during WWII was a light tank called the
+                    Type 95
+                    'Ha-Go'. This tank was not powerful - its gun was only 37mm thick and its thickest armour is
+                    12mm
+                    thick,
+                    which is extremely thin compared to the American armour it would realistically face in the
+                    Pacific.
+                    <br>However, there is a reason the Japanese did not bother developing their tanks - they did not
+                    need
+                    to.
+                    When it came to fighting the Americans, the Japanese relied on the strengths of their
+                    regular
+                    infantry,
+                    naval air arms and especially their navy, all of which were extremely potent in combatting
+                    the
+                    Americans. Tanks were not a necessity for the kind of war the Japanese were fighting against
+                    the
+                    Americans. Moreover, Japan's other enemies included China and the colonial forces of the
+                    French and
+                    the
+                    British - none of which had equipment that could outmatch the force of the invading
+                    Japanese.
+                    Therefore,
+                    it can be said that Japan did not have powerful tanks simply because ppwerful tanks were not
+                    necessary -
+                    tanks like the Type 95 were already sufficient.
+                </p>
+                <figure>
+                    <img src="Images/ww2/type_95.jpg" alt="Japanese Type-95 Ha-Go" title="Japanese Type-95 Ha-Go">
+                    <figcaption class="asidefigcap">The humble Type 95 - it served throughout the entirety of the war.
+                    </figcaption>
+                </figure>
+                <p>
+                    While Japan's situation was understandable, the same could not be said for Fascist Italy.
+                    The M13/40
+                    tank was intended to be the main tank used by the Royal Italian Army - it was actually
+                    slightly more
+                    powerful than the previously mentioned Japanese Type 95, with its thickest armour being 42mm
+                    thick
+                    and
+                    its main gun being 47mm in diameter. While not bad on paper, the Italian armoured fleet
+                    actually
+                    mostly
+                    consisted of 'tankettes' like the L3/33, which, honestly, could barely be considered a tank.
+                    Furthermore, Italian tanks were seldom fit with radios, their crews received almost no
+                    training, and
+                    unit formations had zero cohesion with each other.
+                </p>
+                <figure>
+                    <img src="Images/ww2/m13_40.jpg" alt="Italian M13/40" title="Italian M13/40">
+                    <figcaption class="asidefigcap">The M13/40 - it's not just the tank, but the crew as well.
+                    </figcaption>
+                </figure>
+                <p>
+                    This is actually a recurring theme across the Royal Italian Army during WWII. Italian
+                    industry was
+                    very
+                    small compared to its enemies, and it had used a lot of its resources in preceding wars,
+                    like during
+                    its
+                    conquest of Ethiopia in 1935 and its intervention in the 1936 Spanish Civil War. The
+                    Under-Secretary
+                    for
+                    War Production claimed that Italy could not possibly be ready for a war until at least
+                    October 1942,
+                    yet
+                    the military was rushed to war in 1940, under the command of generals who were expecting the
+                    tactics
+                    of
+                    WWI-style trench warfare. The Royal Italian Army was, admittedly, a case of incompetent
+                    planning and
+                    almost non-existent logistics.
+                </p>
+            </aside>
+        </section>
+
+        <section id="section5" class="section" style="display: none">
+            <header class="sectiontitle">
+                <h2>The Cold War & Afterwards</h2>
+            </header>
+            <p>
+                After the end of WWII, tank development slowed down drastically since there was no longer the
+                threat of
+                world domination by a single dictatorship. But it did not stop completely, as ideologies clashed
+                between
+                East and West, and the Cold War began. The Western powers and the Soviet Union continued
+                improving their
+                tanks as they fought the many proxy wars characteristic of the Cold War, making them faster,
+                harder-hitting,
+                and more armoured.
+            </p>
+            <br>
+            <p>
+                A particularly notable early-Cold War tank is the Soviet T-54/55 series of tanks, conceived at
+                the end
+                of
+                WWII and first put into service in 1947. It is actually the most-produced tank in history, with
+                estimations
+                indicating almost a whopping 100,000 being produced. This design of tank would and still be the
+                basis
+                for
+                the tank fleets Russia fields to this day. Many smaller countries still use the 70-year-old
+                tank,
+                although
+                usually with some modernizations to update the old design. The tank was exported all across the
+                world,
+                with
+                countries in South America, the Middle East and Asia still having some in service.
+            </p>
+            <figure>
+                <img src="Images/coldwar+modernday/t-55.jpg" alt="Soviet T-55" title="Soviet T-55">
+                <figcaption>This 70-year-old tank is still being used today.
+                </figcaption>
+            </figure>
+            <p>
+                Another development during the 1950s was the widespread adoption of the 'main battle tank'
+                concept.
+                'Main
+                battle tanks' were usually derived from the medium tanks of the time, which sought to strike a
+                balance
+                between speed, firepower and protection. Tanks eventually reached a point where their guns could
+                penetrate
+                any practical level of armour. This meant that the class of tanks called 'heavy tanks' -
+                intended to
+                carry
+                the biggest guns and thickest armour, was rendered obsolete. 'Light tanks' which had little
+                firepower
+                and
+                armour also fell out of style as it was realized that no amount of speed could compensate for
+                both the
+                offset qualities. Thus militaries began standardizing their tank fleets with fewer separate tank
+                designs
+                in
+                service at any given moment.
+            </p>
+            <figure>
+                <img src="Images/coldwar+modernday/centurion.jpg" alt="British/Australian Centurion"
+                    title="British/Australian Centurion">
+                <figcaption>This Australian Centurion saw combat during the Vietnam War in 1968.
+                </figcaption>
+            </figure>
+            <p>
+                The previously mentioned T-54/55 tank was one of the Soviet Union's first main battle tanks.
+                Another
+                example
+                of a wildly successful 'MBT' was the British Centurion, introduced in 1945 after WWII. It too
+                has an
+                extremely long and ongoing service life and is a popular choice of tank for export, although it
+                was not
+                mass-produced on the scale the T-54/55 was, having less thank 5,000 units built.
+            </p>
+            <br>
+            <p>
+                Skipping ahead to around the late 1970s, this was when the prototypes for the tanks in service
+                today
+                would
+                be coming out. In November 1976, the US Department of Defense would award the Chrysler Defense
+                company a
+                $4.9B USD contract to begin producing the finalized design of the XM1, which is now known as the
+                M1
+                Abrams
+                main battle tank - this is the tank that would be an icon of late and post-Cold War American
+                interventionism, especially in the Middle East. The tank would appear a lot in Iraq and Afghanistan.
+            </p>
+            <figure>
+                <img src="Images/coldwar+modernday/abrams.jpg" alt="American M1A2 Abrams" title="American M1A2 Abrams">
+                <figcaption>The M1A2 Abrams in Iraq</figcaption>
+            </figure>
+            <p>
+                At around the same time in 1979, the first Leopard 2s were being pressed into service by the
+                West German
+                military. This tank is still in service in Germany today, being on its eight iteration - the
+                'Leopard
+                2A8'.
+                The Leopard 2 also happens to be a very popular export design, with many other NATO nations
+                procuring
+                some
+                of their own and modifying it to their needs. Sweden built some of their own Leopards, calling
+                it the
+                'Stridsvagn 122'. Poland bought some of the older 'Leopard 2A4' tanks from Germany and
+                mdoernized them,
+                dubbing it the 'Leopard 2PL'.
+            </p>
+            <!--  -->
+            <aside>
+                <header class="asidetitle">
+                    <h3>Singapore's Armoured Fleet</h3>
+                </header>
+                <p>
+                    Singapore also possesses a formidable tank force - one of the most powerful in South-East
+                    Asia! The
+                    main
+                    battle tank used is the Leopard 2SG, which you can probably tell is an upgraded Leopard 2
+                    tank from
+                    Germany. Some domestic designs are in service as well, such as the Bionix infantry fighting
+                    vehicle
+                    which has been in service with the Singapore Armed Forces since 1997. There is also the
+                    Hunter
+                    Armoured
+                    Fighting Vehicle, a new armoured fighting vehicle that is apparently the 'world's first
+                    fully
+                    digitalised platform'.
+                </p>
+                <!-- SLIDESHOW 2 -->
+                <div class="multiplethings">
+                    <button id="secondleft" style="width: 50px; position: relative; left: 43%;">&#8592;</button>
+                    <button id="secondright" style="width: 50px; position: relative; left: 43%;">&#8594;</button>
+                </div>
+                <figure>
+                    <img id="secondimgarr" src="Images/coldwar+modernday/leopard_2sg.jpg">
+                    <figcaption id="seconddyncaption" class="asidefigcap">The Leopard 2SG, the mainstay of the Singapore
+                        Armour.</figcaption>
+                </figure>
+            </aside>
+        </section>
+
+        <!-- Everything from here on are sub-topics -->
+
+        <section id="section6" class="section" style="display: none">
+            <header class="sectiontitle">
+                <h2>The Classification of Tanks</h2>
+            </header>
+            <p>
+                Throughout this whole article, you would have heard tanks being referred to as 'light tanks',
+                'medium tanks'
+                or 'heavy tanks' particularly in the WWII section, whilst the Cold War onwards used terms like 'main
+                battle
+                tank' or 'infantry fighting vehicle'. This section aims to explain all these terms!
+            </p>
+
+            <header class="segmenttitle">
+                <h3>Light, Medium and Heavy Tanks</h3>
+            </header>
+            <p>
+                These are the terms that were mainly used to classify tanks before, during and a little bit after
+                WWII.
+                Alongside describing their weight
+                and size, these types also worked to briefly describe the combat role the tank of that type would
+                most
+                likely be assigned;
+                <br>
+                <br>
+                1. <b>Light tanks</b> were, as the name implies, smaller and lighter tanks that usually carried less
+                armour
+                and firepower, in exchange for being highly mobile. They were usually assigned less confrontational
+                roles,
+                like armoured reconnaissance or artillery observation. They were much more prevalent in the 1930s
+                and 1940s,
+                but some light tank designs did exist in the Cold War, like the American 'High-Survivability Test
+                Vehicle -
+                Light'.
+                <br>
+                <br>
+                2. <b>Medium tanks</b> are the middle-ground of performance aspects of tanks, balancing mobility,
+                firepower
+                and protection. They are usually employed as the bread-and-butter of armoured fleets, engaging in
+                more
+                direct combat against infantry - more well-known tanks usually fall under this category. Examples
+                include
+                some tanks previously mentioned in this article, like the M4 Sherman, T-34 or Panzer IV. Main battle
+                tanks
+                would soon succeed the medium tank in their roles.
+                <br>
+                <br>
+                3. <b>Heavy tanks</b> are the polar opposite of light tanks, trading mobility for greater protection
+                and
+                firepower. Their role was to attack and destroy heavily fortified enemy positions to create openings
+                for the
+                infantry; They were also sometimes used as mobile bunkers. The German Tiger Is and Tiger IIs are
+                considered
+                heavy tanks - other examples include the Soviet KV and IS series of tanks.
+            </p>
+
+            <header class="segmenttitle">
+                <h3>Tank Destroyers and Other Self-Propelled Weapons</h3>
+            </header>
+            <p>
+                Tanks are typically designed to engage both enemy infantry and other tanks. However, there are other
+                tanks
+                that have more specialized qualities. <b>Tank destroyers</b>, as the name implies, is a class of
+                vehicles
+                intended specifically to destroy even the heaviest types of tanks. The nature of the role means
+                their
+                designs totally commit to firepower - they can be somewhat vulnerable to other types of attack, like
+                against
+                infantry or air attack. They were an almost uniquely WWII feature and typically did not typically
+                have
+                turrets. Tank destroyers also existed in some way during the Cold War, as vehicles that carried
+                guided
+                missiles instead of a conventional gun.
+            </p>
+            <br>
+            <p>
+                There are also <b>self-propelled artillery</b> vehicles. While they look a lot like tanks, and are
+                considered as tanks, they do not really perform like tanks. Self-propelled artillery is simply when
+                designers put an artillery cannon on a tank-like chassis. They also operate much like artillery -
+                positioning themselves far away from the frontlines and raining suffering down on any unfortunate
+                victims.
+                Having an artillery gun have its own tank body helps it reposition to a more advantageous location
+                much
+                quicker, and there are still self-propelled artillery vehicles being used today. Along with normal
+                guns,
+                this can also include rocket and missile launchers.
+            </p>
+            <br>
+            <p>
+                On the other hand, there is the <b>self-propelled anti-aircraft</b> class of vehicles. Like the
+                artillery
+                variant, these are vehicles that carry anti-aircraft armament instead, and also include both guns
+                and
+                missiles. Having the ability to stay on the move means you are less of a sitting duck asking to get
+                bombed.
+            </p>
+
+            <header class="segmenttitle">
+                <h3>Infantry and Cavalry Fighting Vehicles</h3>
+            </header>
+            <p>
+                The <b>infantry fighting vehicle</b> is a concept that began to grow in popularity during the Cold
+                War and
+                is a type still used in modern militaries. It has a role similar to Armoured Personnel Carriers - to
+                carry
+                troops into battle. The main difference is that IFVs actually join the troops it carries into
+                combat, unlike
+                APCs which have guns solely for self-defense. IFVs are also capable of engaging any ground target on
+                its own
+                due to the variety of weaponry the type typically carries.
+            </p>
+            <br>
+            <p>
+                <i>"(An IFV is) an armoured fighting vehicle which is designed and equipped primarily to transport a
+                    combat
+                    infantry squad, and which is armed with an integral or organic cannon of at least 20 millimeters
+                    calibre
+                    and sometimes an antitank missile launcher"</i> - The 1990 Treat on Conventional Armed Forces in
+                Europe,
+                on the definition of an IFV.
+            </p>
+            <br>
+            <!-- fv510 warrior, schutzenpanzer marder, zbd-04 -->
+            <p>
+                The term 'Cavalry Fighting Vehicle' is a term that comes from the American M3 Bradley Cavalry
+                Fighting
+                Vehicle. It is very similar to its older sister, the M2 IFV, also called the Bradley. It is
+                different in
+                that it has fewer acommodations for infantry passengers, but carries more ammunition and has a
+                different
+                role from the M2 (armoured reconnaissance rather than infantry support).
+            </p>
+            <figure>
+                <img src="Images/subtopics/bradley.jpg" alt="American M3 Bradley Cavalry Fighting Vehicle"
+                    title="American M3 Bradley Cavalry Fighting Vehicle">
+                <figcaption>The M3 Bradley CFV has a more defined anti-tank role.</figcaption>
+            </figure>
+        </section>
+
+        <section id="section7" class="section" style="display: none">
+            <header class="sectiontitle">
+                <h2>More Interesting Tanks and Tank Technology</h2>
+            </header>
+            <p>
+                Here are some more very interesting tank-related technology and notable tanks throughout history!
+            </p>
+
+            <header class="segmenttitle">
+                <h3>Antonov A-40</h3>
+            </header>
+            <figure style="text-align: left;">
+                <img src="Images/subtopics/flyingtank.jpg" alt="Soviet flying tank prototype"
+                    title="Soviet flying tank prototype">
+                <figcaption></figcaption>
+            </figure>
+            <p>
+                The A-40 was a WWII Soviet experimental FLYING tank!
+                <br>
+                Not really - the idea was that a bomber carrying a Soviet T-60 light tank with biplane wings would
+                drop the
+                tank
+                on the battlefield, so that the tank could glide to a position close to its objective. This idea was
+                never
+                practical though - there was a very fundamental problem in testing. In order for any plane at the
+                time to be
+                able to carry a tank, Soviet testers were forced to strip the tank of all of its ammunition, and
+                could only
+                use a tiny amount of fuel. Thus if this concept was applied, even if the glider tank did survive the
+                fall
+                with its crew, there was no way it could inflict any significant damage or complete any objective
+                before
+                running out of resources. In fact, it would most likely only cause issues, since there would then be
+                a tank
+                crew stuck behind enemy lines and in-need of rescuing.
+                <br>
+                Technology would reach a point when planes could carry even the heaviest tanks with more
+                reliability. But
+                hot-dropping them in combat would most likely remain impractical and unnecessary.
+            </p>
+
+            <header class="segmenttitle">
+                <h3>Deep Fording</h3>
+            </header>
+            <figure style="text-align: left;">
+                <img src="Images/subtopics/deepwading.jpg" alt="Leopard 2s with snorkels"
+                    title="Leopard 2s with snorkels">
+                <figcaption></figcaption>
+            </figure>
+            <p>
+                In WWII, Allied tanks could have 'duplex drives' that allow them to float above water. Today, tanks
+                can
+                actually move around underwater, simply by attaching a snorkel to the tank which provides a path of
+                air
+                circulation. This technique is particularly invaluable in Europe, as NATO and Soviet forces would
+                encounter
+                many rivers where bridges may be destroyed or otherwise inadequate for use by heavy vehicles like
+                tanks.
+                Crews tend to be a little nervous about this method of water-crossing, as they are physically
+                trapped inside
+                the tank. If a snorkelled tank broke down in the middle, the crews would have to stay inside until
+                it is
+                towed above water.
+            </p>
+
+            <header class="segmenttitle">
+                <h3>Active Protection Systems</h3>
+            </header>
+            <figure style="text-align: left;">
+                <img src="Images/subtopics/aps.jpg" alt="Leopard 2's StrikeShield APS system"
+                    title="Leopard 2's StrikeShield APS system">
+                <figcaption></figcaption>
+            </figure>
+            <p>
+                As weapons become more advanced, so did the protection systems on tanks. Tanks no longer need to
+                rely solely
+                on thicker skin to shield them from harm, as there have been recent developments of gadgets that can
+                neutralize or completely destroy incoming anti-tank missiles. These 'active protection systems' have
+                two
+                categories - <b>'soft-kill'</b> and <b>'hard-kill'</b>.
+                <br>
+                <br>
+                <b>'Soft-kill'</b> is a system in place to confuse or otherwise mess with an incoming missile's
+                tracking - missiles are not effective if they cannot hit their target accurately. Gadgets such as
+                smoke
+                screens or 'dazzlers', which disrupt missile guidance with radiation, are considered soft-kill
+                countermeasures.
+                <br>
+                <b>'Hard-kill'</b> countermeasures, on the other hand, seek a more complicated but proven method -
+                physically pulverizing an incoming missile until it is dust. A simple way to think of it is that
+                there is an
+                automated turret on a tank that, when it sees a missile coming, tracks the missile and shoots a
+                shotgun
+                shell at the missile. This can prematurely detonate the missile before it comes into contact with
+                the
+                protected tank. It is like a miniature missile defense system for the tank.
+            </p>
+        </section>
+    </main>
+
+    <footer style="margin-top: 50px;">
+        <button onclick="location.href='#top'">Back to Top</button>
+        <br>
+        <p id="qrCodeImg" style="text-align: center;">Mobile QR</p>
+        <img id="qrCodeImg" src="Images/webdev_a2_qr.png" style="width: 200px;">
+    </footer>
+
+    <script src="main.js"></script>
+    </body>
+
+
+</html>
